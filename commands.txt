@@ -1,0 +1,14 @@
+gcloud auth configure-docker us-central1-docker.pkg.dev  
+
+
+docker push us-central1-docker.pkg.dev/panva-fb/docker-images/zotero-translation-https:v1
+docker tag zotero-translation-https:v1 us-central1-docker.pkg.dev/panva-fb/docker-images/zotero-translation-https:v1
+
+us-central1-docker.pkg.dev/panva-fb/docker-images
+
+
+gcloud auth configure-docker us-central1-docker.pkg.dev
+
+
+
+docker pull us-central1-docker.pkg.dev/panva-fb/docker-images/zotero-translation-https:v1
